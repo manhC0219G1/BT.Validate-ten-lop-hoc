@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function check(str) {
+        regexp = /^[A-Z]+[0-9]{4,}([A-Z]{1,}$)/
+        if(regexp.test(str)){
+            return true
+        }else{
+            return false
+        }
+
+    }
+    let a =check("C0318G")
+    document.write(a)
+</script>
+</body>
+</html>
